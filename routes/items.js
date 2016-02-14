@@ -9,8 +9,8 @@ var USE_FASTCACHE = false;
  * 2. uncomment the remaining method body
  */
 exports.loadTest = function(req, res) {
-    res.json({"success": 0, "fail": 0, "time": 0});
-/*
+//    res.json({"success": 0, "fail": 0, "time": 0});
+///*
     USE_FASTCACHE = true;
     var testCount = req.query.count;
     testCount = testCount ? parseInt(testCount) : 100;
@@ -39,7 +39,7 @@ exports.loadTest = function(req, res) {
             path: "/items/" + (i % 2 ? itemId1 : itemId2)
 	}, callback);
     }
-*/
+//*/
 };
 
 
